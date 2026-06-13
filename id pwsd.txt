@@ -1,4 +1,0 @@
-username : jenkins-project
-pwsd : Jenkins2345%
-email : rohillapriyanshu22@gmail.com
-link : http://172.29.13.11:8080/
