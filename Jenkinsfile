@@ -5,20 +5,19 @@ pipeline {
 
         stage('Check Python') {
             steps {
-                bat 'python --version'
-                bat 'python -m pip --version'
+                bat '"C:\\Users\\DELL\\AppData\\Local\\Python\\bin\\python.exe" --version'
             }
         }
 
         stage('Install Dependencies') {
             steps {
-                bat 'python -m pip install -r requirements.txt'
+                bat '"C:\\Users\\DELL\\AppData\\Local\\Python\\bin\\python.exe" -m pip install -r requirements.txt'
             }
         }
 
         stage('Run Tests') {
             steps {
-                bat 'python -m pytest'
+                bat '"C:\\Users\\DELL\\AppData\\Local\\Python\\bin\\python.exe" -m pytest'
             }
         }
 
